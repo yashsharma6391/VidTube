@@ -1,0 +1,43 @@
+.splash-screen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    width: 100vw;
+    z-index: -1;
+    /* transform-origin: center */
+    overflow: visible;
+   
+    
+}
+.splash-logo{
+    font-size: 180px;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    z-index: 11;
+    color: transparent;
+    display: flex;
+   overflow: visible;
+   line-height: 1.2;
+
+    
+    
+   
+
+}
+@media  screen and (max-width:468px){
+    .splash-logo{
+        font-size: 30px;
+        font-weight: 800;
+    }
+
+} 
+@media (min-width:468px) and (max-width:668px) {
+    .splash-logo{
+        font-size: 80px;
+        font-weight: 600;
+    }
+    
+}
+    

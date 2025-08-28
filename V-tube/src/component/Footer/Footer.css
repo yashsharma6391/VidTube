@@ -1,0 +1,38 @@
+.mobile-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: black;
+  /* padding: 10px 0; */
+  z-index: 1000;
+  border-top: 1px solid #333;
+  /* margin-bottom: 55px; */
+}
+
+.mobile-footer .home_sideNavbarTopOption {
+  flex-direction: column;
+  font-size: 12px;
+  gap: 1px;
+  padding: 5px 10px;
+}
+
+.mobile-footer .home_sideNavbarTopOptionTitle{
+    /* gap: 0; */
+    font-size: 10px;
+}
+.mobile-footer .MuiSvgIcon-root {
+    font-size: 20px;
+}
+
+
+@media screen and (min-width:468px) {
+    
+   .mobile-footer{
+    display: none;
+   }
+
+}

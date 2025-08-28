@@ -1,0 +1,228 @@
+.homePage{
+    color:white;
+    display: flex;
+    flex-direction: column;
+    /* overflow-x: hidden; */
+    flex:1;
+    margin-left:255px;
+    min-height: 100vh;
+  
+    
+    
+   
+    
+}
+.fullHomePage{
+    margin-left: 0;
+}
+.homePage_options::-webkit-scrollbar{
+    width: 12px;
+}
+.homePage_options{
+    display: flex;
+    position: fixed;
+    top: 56px;
+    z-index: 1;
+    width: 100%;
+    box-sizing: border-box;
+    gap: 10px;
+    flex-shrink: 0;
+    height: auto;
+    overflow-x: auto;
+    background-color: black;
+
+}
+.homePage_option{
+    flex: 0 0 auto;
+    height: 30px;
+    padding: 1px 10px;
+    background-color: rgb(42,42,42);
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    display: flex;
+    z-index: 500;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.home_mainPage{
+    display: grid;
+    box-sizing: border-box;
+    gap: 10px;
+    grid-template-columns:repeat(3,1fr);
+    padding: 95px 0 20px 0;
+    background-color:#161616;
+    height: 100%;
+    
+    
+    
+
+}
+.home_mainPageWithoutlink{
+    display: grid;
+    box-sizing: border-box;
+    gap: 30px;
+    grid-template-columns:repeat(4,1fr);
+    padding: 95px 10px 20px 10px;
+    background-color: #161616;
+    
+}
+
+.youtube_mainPage{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    cursor: pointer;
+    height: 316px;
+   
+}
+.youtube_thumbnailBox{
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    height: 216px ;
+}
+.youtube_thumbnailPic{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.youtube_timingthumbnail{
+    position: absolute;
+    font-size: 13px;
+   
+    bottom: 0;
+    right: 0;
+    width: auto;
+    padding: 1px 2px;
+    /* background-color: rgb(42,42,42); */
+    border-radius: 5px;
+    color: white;
+    white-space: nowrap;      /* ✅ Prevent wrapping */
+  width: auto;              /* ✅ Allow auto-width */
+  max-width: 100%;          /* ✅ Prevent overflow */
+  text-align: center;
+  margin-bottom: 2px;
+  margin-right: 3px;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(20px);
+  background: rgba(6, 6, 6, 0.675);
+}
+
+
+.youtube_TitleBox{
+    display: flex;
+    padding-top: 8px;
+}
+.youtubeTitleBoxProfile{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.youtube_thumbnail_Profile{
+   /* width: 80%; */
+   width: 100%;
+   height: 100%;
+   border-radius: 50%;
+}
+.youtubeTitleBox_Title{
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.youtube_channelName{
+    margin-top: 5px;
+    font-size: 18px;
+    color: rgb(170,170,170);
+    /* text-decoration: none; */
+}
+.youtube_videoTitle{
+    color: white;
+    margin-top: 2px;
+}
+.youtubeVideo_likes{
+    color: grey;
+}
+.youtube_Video{
+    text-decoration: none;
+}
+/* -----responsive query------ */
+
+@media screen and (max-width: 468px) {
+  .home_mainPage,
+  .home_mainPageWithoutlink {
+    grid-template-columns: 1fr; /* 1 video per row */
+    padding: 97px 10px 20px 10px;
+  }
+
+  .youtube_TitleBox,
+  .youtube_thumbnail_Profile,
+  .youtube_videoTitle,
+  .youtube_channelName,
+  .youtube_video_likes {
+    font-size: 14px;
+    padding: 2px 0;
+  }
+
+  .youtube_thumbnailPic {
+    height: 100%px;
+    width: 100%;
+  }
+
+  .youtube_mainPage {
+    height: auto;
+  }
+
+  .homePage_option{
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    /* flex-wrap: wrap; */
+    gap: 10px;
+    padding: 10px;
+    scrollbar-width: thin;
+
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-x:auto;
+  }
+  .homePage_options::-webkit-scrollbar{
+    display: none;
+  }
+
+  .homePage_option {
+    flex: 0 0 auto;
+    margin: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+
+  /* .sideNavbar {
+    display: none; /* Hide sidebar on small screens */
+  
+
+  .fullHomePage {
+    margin-left: 0 !important;
+  }
+  .homePage{
+    margin-left: 0;
+  }
+}
+
+@media   (min-width:468px) and (max-width:768px){
+    .home_mainPage,
+    .home_mainPageWithoutlink{
+        display: grid;
+        grid-template-columns:repeat(2,1fr);
+      }
+} 
+  
+

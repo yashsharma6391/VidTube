@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 48 48" fill="none">
+  <!-- Stylized V shape -->
+  <path d="M12 12L24 36L36 12H28L24 24L20 12H12Z" fill="#D32F2F"></path>
+  
+  <!-- Play Button -->
+  <path d="M22 18L32 24L22 30V18Z" fill="white"></path>
+</svg>

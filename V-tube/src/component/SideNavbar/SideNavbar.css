@@ -1,0 +1,87 @@
+.homeSideNavbarHide{
+    display: none;
+}
+
+
+
+
+.home-sideNavbar{
+    display: flex;
+    flex-direction: column;
+    flex: 0.16 1;
+    box-sizing: border-box;
+    height: 92vh;
+    overflow-y: auto;
+    position: fixed;
+    top: 55px;
+    left: 0px;
+    width: 257px;
+    padding: 14px;
+    background-color: black;
+    z-index: 1000;
+    
+}
+@media (min-width:468px) and (max-width: 768px) {
+    .home-sideNavbar{
+         display:block; /* Hide sidebar on small screens */
+         
+         
+    }
+}
+.home-sideNavbar::-webkit-scrollbar{
+    width: 12px;
+}
+.home-sideNavbarTop{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgb(85, 85, 85);
+    padding-bottom: 10px;
+
+}
+.home_sideNavbarTopOption{
+    display: flex;
+    text-decoration: none;
+    gap: 20px;
+    align-items: center;
+    padding: 9px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    &:hover{
+        background-color: rgb(35,35,35);
+    }
+}
+.home_sideNavbarTopOptionTitle{
+    font-size: 14px;
+    font-weight: 450;
+    color: white;
+    text-decoration: none;
+}
+/* -------sideNavbarMiddle------- */
+.home_sideNavbarMiddle{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgb(85, 85, 85);
+    padding: 10px 0;
+
+}
+/* -----sideNavbarSubscription part------ */
+.home_sideNavbarTopOptionTitleHeader{
+    font-weight: 600;
+    color:white;
+}
+.home_sideNavbar_ImgLogo{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    mix-blend-mode:hard-light;
+   
+}
+.home_dideNavbarTopOptionTitle{
+    color: white;
+}
+@media screen and (max-width:460px) {
+    .home-sideNavbar{
+        display: none;
+    }
+    
+}
