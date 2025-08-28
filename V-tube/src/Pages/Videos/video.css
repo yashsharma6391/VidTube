@@ -359,11 +359,11 @@
   }
 
   .video_youtubeAbout {
-    padding-top: 30px;
+    
     margin-top: 170px;
     position: relative;
     box-sizing: border-box;
-    padding: 6px;
+    padding: 20px 6px 6px 6px;
   }
   .video_uTubeTitle{
     font-size: 20px;
