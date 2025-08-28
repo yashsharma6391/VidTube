@@ -53,7 +53,7 @@ const SignUp = () => {
       );
       setProgressBar(false);
       // console.log(response);
-      const imageUrl = response.data.url;
+      const imageUrl = response.data.secure_url;
       setUploadedImageUrl(imageUrl);
       setSignUpField({
         ...signUpField,
