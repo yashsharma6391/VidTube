@@ -7,7 +7,7 @@ const User = require('../Models/User');
 
 const cookieOptions = {
     httpOnly: true,
-    secure: false,   // set to true in production
+    secure: true,   // set to true in production
     sameSite:'Lax'
 }
 
