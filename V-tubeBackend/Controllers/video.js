@@ -1,7 +1,7 @@
 const { get } = require('mongoose');
 // const video = require('../Modals/Video');
 const Video = require('../Models/Video');
-const user = require('../Models/user');
+const user = require('../Models/User');
 // const user = require('../Modals/User')
 
 
