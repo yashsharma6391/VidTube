@@ -2,7 +2,7 @@
 // const user = require('../Modals/User');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
-const User = require('../Models/user');
+const User = require('../Models/User');
 // const user = require('../Modals/user');
 
 const cookieOptions = {
