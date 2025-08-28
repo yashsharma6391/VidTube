@@ -8,7 +8,7 @@ const User = require('../Models/User');
 const cookieOptions = {
     httpOnly: true,
     secure: true,   // set to true in production
-    sameSite:'Lax'
+    sameSite:'none'
 }
 
 exports.signUp = async(req,res)=>{
