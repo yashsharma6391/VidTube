@@ -3,6 +3,7 @@ import TextLogo from '../Navbar/TextLogo'
 import './SplashScreen.css';
 import {motion} from 'framer-motion';
 import AnimatedLetter from './AnimationLetter';
+const cloudKey = import.meta.env.VITE_CLOUD_KEY;
 const SplashScreen = ({onFinish}) => {
   const text = "VIDTube";
   useEffect(() => {
@@ -21,7 +22,7 @@ const SplashScreen = ({onFinish}) => {
               
  
             <div className='splash-logo' key={i} >
-                <TextLogo videoUrl={'https://res.cloudinary.com/dj6wtbjqi/video/upload/v1756415589/spopunsnaw9muovlbfir.mp4'}>
+                <TextLogo videoUrl={`https://res.cloudinary.com/${cloudyKey}/video/upload/v1756415589/spopunsnaw9muovlbfir.mp4`}>
                   {/* {letter} */}
                   <AnimatedLetter letter={letter} key={i} i={i} />
                 </TextLogo>
