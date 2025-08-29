@@ -165,7 +165,7 @@ exports.increaseViewCount = async (req, res) => {
 
 exports.getTopVideo = async (req, res) => {
   try {
-    const topVideo = await Video.findOne().sort({ views: -1 });
+    const topVideo = await Video.findOne().sort({ views: -1 }).select("videoLink");
 
     if (!topVideo) {
       return res.status(404).json({ success: "false", message: "No videos found" });
