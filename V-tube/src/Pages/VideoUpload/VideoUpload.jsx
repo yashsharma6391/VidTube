@@ -126,7 +126,7 @@ const VideoUpload = () => {
             Video:{" "}
             <input
               type="file"
-              accept="video/mp4,video/webm,video/*"
+              accept="video/*"
               onChange={(e) => {
                 uploadImage(e, "video");
               }}
