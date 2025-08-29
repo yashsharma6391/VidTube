@@ -4,6 +4,7 @@ import './SplashScreen.css';
 import {motion} from 'framer-motion';
 import AnimatedLetter from './AnimationLetter';
 const cloudKey = import.meta.env.VITE_CLOUD_KEY;
+const cloudUrl = import.meta.env.VITE_CLOUD_URL;
 const SplashScreen = ({onFinish}) => {
   const text = "VIDTube";
   useEffect(() => {
