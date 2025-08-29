@@ -23,7 +23,7 @@ const SplashScreen = ({onFinish}) => {
               
  
             <div className='splash-logo' key={i} >
-                <TextLogo videoUrl={`https://res.cloudinary.com/${cloudKey}/video/upload/v1756415589/spopunsnaw9muovlbfir.mp4`}>
+                <TextLogo videoUrl={`https://res.cloudinary.com/${cloudKey}/video/upload/w_720,h_400,q_auto,f_webm/v1756415589/spopunsnaw9muovlbfir.mp4`}>
                   {/* {letter} */}
                   <AnimatedLetter letter={letter} key={i} i={i} />
                 </TextLogo>
