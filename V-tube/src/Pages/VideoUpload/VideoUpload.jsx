@@ -44,7 +44,7 @@ const VideoUpload = () => {
       
       
       const response = await axios.post(
-        `${cloudUrl}/v1_1/${cloudKey}/${type}/upload`,
+        `${cloudUrl}/v1_1/${cloudKey}/${resourceType}/upload`,
         data
       );
       // console.log(response);
