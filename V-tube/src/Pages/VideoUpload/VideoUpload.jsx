@@ -39,6 +39,7 @@ const VideoUpload = () => {
     data.append("file", files[0]);
     // V-tube
     data.append("upload_preset", "V-tube");
+    const resourceType = type === "video" ? "video" : "image";
     try {
       
       
