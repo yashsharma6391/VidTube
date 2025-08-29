@@ -168,7 +168,7 @@
 
 
 /* ------responsive query------- */
-@media  (min-width:320px) and (max-width:468px) {
+@media  (min-width:370px) and (max-width:468px) {
     .profile_page{
         margin-left: 0;
     }
@@ -233,7 +233,7 @@
     
 
 }
-@media  screen and (max-width:320px) {
+@media  screen and (max-width:350px) {
     .Profile{
         padding-left: 9px; ;
     }
