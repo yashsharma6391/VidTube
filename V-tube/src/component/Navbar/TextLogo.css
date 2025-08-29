@@ -46,6 +46,7 @@
     /* font-weight: 800; */
 }
 .splash-logo .banner h3{
+    mix-blend-mode:normal;
     box-sizing: border-box;
     padding: 17px;
 }
