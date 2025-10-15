@@ -196,6 +196,11 @@ const Navbar = ({ setSideNavbarfunc, sideNavbar }) => {
             className="navbar-right-logo"
             src={userPic}
             alt="profile"
+             onError={(e) => {
+              e.target.onerror = null;
+              e.target.src =
+                "https://th.bing.com/th/id/OIP.afscx61wTsHlXo6T9vo1SwHaHa?rs=1&pid=ImgDetMain";
+            }}
           />
 
           {navbarModel && (
