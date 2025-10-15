@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from "react";
 import "./Profile.css";
 import SideNavbar from "../../component/SideNavbar/SideNavbar";
@@ -80,6 +81,11 @@ const Profile = ({ sideNavbar }) => {
               className="profile_top_section_img"
               src={user?.profilePic || "https://th.bing.com/th/id/OIP.afscx61wTsHlXo6T9vo1SwHaHa?rs=1&pid=ImgDetMain"}
               alt=""
+               onError={(e) => {
+              e.target.onerror = null;
+              e.target.src =
+                "https://th.bing.com/th/id/OIP.afscx61wTsHlXo6T9vo1SwHaHa?rs=1&pid=ImgDetMain";
+            }}
             />
           </div>
           <div className="profile_top_section_About">
