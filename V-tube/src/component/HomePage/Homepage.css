@@ -93,7 +93,7 @@
 .youtube_timingthumbnail{
     position: absolute;
     font-size: 13px;
-   
+   font-family:"Roboto","Arial",sans-serif";
     bottom: 0;
     right: 0;
     width: auto;
